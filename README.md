@@ -1,4 +1,4 @@
-## ✅ GODWIN Task Manager API 🛠️  
+## GODWIN Task Manager API 🚀  
 A clean and efficient Task Management REST API built with **Spring Boot (Java backend)**. This project allows users to manage tasks with support for priorities and statuses, full CRUD operations, and input validation.
 
 ---
