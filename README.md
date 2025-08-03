@@ -7,7 +7,7 @@ A clean and efficient Task Management REST API built with **Spring Boot (Java ba
 ---
 
 📝 Add, update, delete, and view tasks  
-🔍 Search tasks by **ID** or **Title**  
+🔍 Search tasks by **ID**, **Title**, **Status**, or **Priority**  
 🎯 Set task `Priority` (`LOW`, `MEDIUM`, `HIGH`)  
 📌 Update task `Status` (`PENDING`, `IN_PROGRESS`, `COMPLETED`)  
 🛡️ Input validation with proper error messages  
@@ -20,7 +20,7 @@ A clean and efficient Task Management REST API built with **Spring Boot (Java ba
 ---
 
 - **Backend**: Spring Boot, Java  
-- **Database**: H2 (in-memory, can be swapped with PostgreSQL/MySQL)  
+- **Database**: PostgreSQL (can be swapped)  
 - **Tools**: Maven, Git, Swagger-UI  
 
 ---
@@ -28,13 +28,15 @@ A clean and efficient Task Management REST API built with **Spring Boot (Java ba
 ### 🔄 API Endpoints  
 ---
 
-| Method | Endpoint               | Description            |
-|--------|------------------------|------------------------|
-| POST   | `/addTask`             | Create a new task      |
-| GET    | `/tasks/{id}`          | Fetch task by ID       |
-| GET    | `/tasks/title/{title}` | Fetch task(s) by title |
-| PUT    | `/update/{id}`         | Update task by ID      |
-| DELETE | `/delete/{id}`         | Delete task by ID      |
+| Method | Endpoint                   | Description                 |
+|--------|----------------------------|-----------------------------|
+| PUT    | `/update/{id}`             | Update task by ID           |
+| POST   | `/addTask`                 | Create a new task           |
+| GET    | `/tasks/title/{title}`     | Fetch task(s) by title      |
+| GET    | `/tasks/status/{status}`   | Fetch task(s) by status     |
+| GET    | `/tasks/priority/{priority}` | Fetch task(s) by priority   |
+| GET    | `/tasks/id/{id}`           | Fetch task by ID            |
+| DELETE | `/delete/{id}`             | Delete task by ID           |
 
 ---
 
